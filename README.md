@@ -1,4 +1,30 @@
+![Folder Checker: a folder and magnifying glass on a dark teal background](assets/folder-checker-hero.svg)
+
 # Folder Checker
+
+A Windows desktop folder scanner with a Hebrew WPF interface and Microsoft Defender integration.
+
+[Try the demo](#try-the-demo) · [Features](#features) · [Requirements](#requirements) · [Build and run](#build-and-run) · [Architecture](#architecture) · [Verification and limitations](#verification-and-limitations)
+
+## Try the demo
+
+On Windows with .NET SDK 10.0.404 installed, open Command Prompt in this repository and run:
+
+```cmd
+build.cmd demo
+```
+
+The demo uses simulated data; it does not scan files or perform treatment.
+
+## How it works
+
+```mermaid
+flowchart LR
+    A[Select a folder and start] --> B[Scanner.Core enumerates files]
+    B --> C[Microsoft Defender]
+    C --> D[Presentation controller]
+    D --> E[Hebrew WPF results and charts]
+```
 
 A Windows desktop folder scanner built with C# and WPF, using Microsoft Defender as its scanning engine.
 
