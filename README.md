@@ -27,8 +27,6 @@ flowchart LR
     D --> E[Hebrew WPF results and charts]
 ```
 
-A Windows desktop folder scanner built with C# and WPF, using Microsoft Defender as its scanning engine.
-
 The interface is in **Hebrew**, with right-to-left layouts. This repository contains application source and safe managed checks, rather than a separate antivirus engine or packaged binary release.
 
 ## Features
