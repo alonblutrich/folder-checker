@@ -11,6 +11,7 @@ A Windows desktop folder scanner with a Hebrew WPF interface and Microsoft Defen
 On Windows with .NET SDK 10.0.404 installed, open Command Prompt in this repository and run:
 
 ```cmd
+build.cmd build
 build.cmd demo
 ```
 
